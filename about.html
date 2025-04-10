@@ -1,21 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Thai</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
   <style>
-    html { color-scheme: light dark; }
-    body { width: 35em; margin: 0 auto; font-family: Tahoma, Verdana, Arial, sans-serif; }
-    nav a { margin-right: 15px; }
+    html {
+      color-scheme: light dark;
+      font-family: 'Orbitron', sans-serif;
+    }
+    body {
+      width: 80%;
+      margin: 0 auto;
+      background: linear-gradient(135deg, #2e3a4e, #1a2634);
+      color: #f0f0f0;
+      text-align: center;
+      padding: 40px 0;
+      font-family: 'Orbitron', sans-serif;
+    }
+    .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background: linear-gradient(135deg, #2e3a4e, #1a2634);
+      padding: 15px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+      margin-bottom: 40px;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: #f0f0f0;
+      font-size: 1.2em;
+      padding: 12px 25px;
+      background-color: #1e88e5;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 8px rgba(255, 235, 59, 0.6);
+    }
+    .navbar a:hover {
+      background-color: #1976d2;
+      box-shadow: 0 0 15px rgba(255, 235, 59, 1);
+      transform: scale(1.05);
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #ffeb3b;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+    p {
+      font-size: 1.2em;
+      color: #d1d8e0;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 20px auto;
+    }
   </style>
 </head>
 <body>
+  <div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="warning-signs.html">Warning Signs</a>
+    <a href="alternatives.html">Alternative Options</a>
+    <a href="support.html">Emotional Support</a>
+  </div>
+
   <h1>About Thai</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <p>Hi! I'm Thai. This website is a simple example running on an nginx server.</p>
-  <p>I enjoy web development and learning new technologies!</p>
+  <p>Hi! I'm Thai. This website is designed to support players who might be experiencing emotional stress from playing League of Legends.</p>
+  <p>I enjoy web development, mental wellness advocacy, and creating meaningful digital experiences.</p>
 </body>
 </html>
+``
