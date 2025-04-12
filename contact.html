@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Thai</title>
+  <title>Alternative Options - League Support</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
   <style>
     html {
       color-scheme: light dark;
       font-family: 'Orbitron', sans-serif;
     }
+
     body {
       width: 80%;
       margin: 0 auto;
@@ -17,8 +18,8 @@
       color: #f0f0f0;
       text-align: center;
       padding: 40px 0;
-      font-family: 'Orbitron', sans-serif;
     }
+
     .navbar {
       display: flex;
       justify-content: center;
@@ -28,6 +29,7 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
       margin-bottom: 40px;
     }
+
     .navbar a {
       text-decoration: none;
       color: #f0f0f0;
@@ -38,30 +40,117 @@
       transition: all 0.3s ease;
       box-shadow: 0 0 8px rgba(255, 235, 59, 0.6);
     }
+
     .navbar a:hover {
       background-color: #1976d2;
       box-shadow: 0 0 15px rgba(255, 235, 59, 1);
       transform: scale(1.05);
     }
+
+    .navbar a:active {
+      background-color: #1565c0;
+      box-shadow: 0 0 10px rgba(255, 235, 59, 0.6);
+      transform: scale(1);
+    }
+
+    .header-section {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 50px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+      margin-bottom: 40px;
+    }
+
     h1 {
-      font-size: 2.5em;
+      font-size: 2.3em;
       color: #ffeb3b;
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     }
-    p, a {
+
+    p {
       font-size: 1.2em;
-      color: #d1d8e0;
       line-height: 1.6;
+      color: #d1d8e0;
+      margin-top: 20px;
     }
-    a {
-      color: #64b5f6;
-      text-decoration: none;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 30px;
     }
-    a:hover {
+
+    li {
+      margin: 15px 0;
+      font-size: 1.1em;
+    }
+
+    a.resource-link {
+      color: #1e88e5;
       text-decoration: underline;
+    }
+
+    .section-title {
+      font-size: 1.8em;
+      color: #ffeb3b;
+      margin-top: 50px;
+    }
+
+    .resource-box {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
     }
   </style>
 </head>
 <body>
-  <div
-  
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="about.html">Warning Signs</a>
+    <a href="contact.html">Alternative Options</a>
+    <a href="support.html">Emotional Support</a>
+  </div>
+
+
+  <!-- Header -->
+  <div class="header-section">
+    <h1>Alternative Support Options</h1>
+    <p>Sometimes, taking a break is the bravest move you can make. Here are some powerful tools and resources to support you outside the Rift.</p>
+  </div>
+
+  <div class="resource-box">
+    <h2 class="section-title">Professional Help</h2>
+    <ul>
+      <li><a class="resource-link" href="https://www.betterhelp.com/" target="_blank">BetterHelp - Online Therapy</a></li>
+      <li><a class="resource-link" href="https://www.7cups.com/" target="_blank">7 Cups - Free Emotional Support</a></li>
+      <li><a class="resource-link" href="https://www.crisistextline.org/" target="_blank">Crisis Text Line - Text HOME to 741741</a></li>
+    </ul>
+  </div>
+
+  <div class="resource-box">
+    <h2 class="section-title">In-Game Alternatives</h2>
+    <ul>
+      <li>Try playing ARAM or Co-Op vs AI to ease competitive pressure</li>
+      <li>Mute toxic players early – protect your energy</li>
+      <li>Take breaks after every match – stretch, hydrate, breathe</li>
+    </ul>
+  </div>
+
+  <div class="resource-box">
+    <h2 class="section-title">Offline Self-Care</h2>
+    <ul>
+      <li>Meditation Apps: <a class="resource-link" href="https://www.headspace.com/" target="_blank">Headspace</a>, <a class="resource-link" href="https://www.calm.com/" target="_blank">Calm</a></li>
+      <li>Journaling your tilt moments – recognize patterns</li>
+      <li>Physical activity – even a short walk helps reset</li>
+    </ul>
+  </div>
+
+  <p><em>Choose the path that keeps your mind at peace – not just your LP intact.</em></p>
+</body>
+</html>

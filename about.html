@@ -10,6 +10,7 @@
       color-scheme: light dark;
       font-family: 'Orbitron', sans-serif;
     }
+
     body {
       width: 80%;
       margin: 0 auto;
@@ -17,8 +18,8 @@
       color: #f0f0f0;
       text-align: center;
       padding: 40px 0;
-      font-family: 'Orbitron', sans-serif;
     }
+
     .navbar {
       display: flex;
       justify-content: center;
@@ -28,6 +29,7 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
       margin-bottom: 40px;
     }
+
     .navbar a {
       text-decoration: none;
       color: #f0f0f0;
@@ -38,16 +40,20 @@
       transition: all 0.3s ease;
       box-shadow: 0 0 8px rgba(255, 235, 59, 0.6);
     }
+
     .navbar a:hover {
       background-color: #1976d2;
       box-shadow: 0 0 15px rgba(255, 235, 59, 1);
       transform: scale(1.05);
     }
+
     h1 {
       font-size: 2.5em;
       color: #ffeb3b;
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      margin-bottom: 30px;
     }
+
     p {
       font-size: 1.2em;
       color: #d1d8e0;
@@ -55,19 +61,64 @@
       max-width: 800px;
       margin: 20px auto;
     }
+
+    .symptom-box {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 700px;
+      margin: 0 auto 50px auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 30px;
+      text-align: left;
+    }
+
+    li {
+      font-size: 1.1em;
+      margin-bottom: 15px;
+      position: relative;
+      padding-left: 25px;
+    }
+
+    li::before {
+      content: "⚠️";
+      position: absolute;
+      left: 0;
+      top: 2px;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Navigation Bar -->
   <div class="navbar">
     <a href="home.html">Home</a>
-    <a href="warning-signs.html">Warning Signs</a>
-    <a href="alternatives.html">Alternative Options</a>
+    <a href="about.html">Warning Signs</a>
+    <a href="contact.html">Alternative Options</a>
     <a href="support.html">Emotional Support</a>
   </div>
 
-  <h1>About Thai</h1>
-  <p>Hi! I'm Thai. This website is designed to support players who might be experiencing emotional stress from playing League of Legends.</p>
-  <p>I enjoy web development, mental wellness advocacy, and creating meaningful digital experiences.</p>
+  <!-- Header -->
+  <h1>What to Look Out For</h1>
+  <p>Are you constantly tilted to the point where you're graying at 25? You're not alone. League of Legends has taken many Summoners on a wild emotional ride. But you don’t have to go through it alone — we're here to help.</p>
+
+  <div class="symptom-box">
+    <ul>
+      <li>Neglecting your personal relationships</li>
+      <li>Calling out of work to go on a 14-game loss streak</li>
+      <li>Difficulty sleeping and dreaming about gameplay</li>
+      <li>Uninstalling and reinstalling more than once</li>
+      <li>Letting in-game rage affect real life</li>
+      <li>Physical symptoms like nausea, tension headaches, and overheating</li>
+    </ul>
+  </div>
+
+  <p><em>Take care of yourself. There’s more to life than LP.</em></p>
+
 </body>
 </html>
-``
